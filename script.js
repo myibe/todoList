@@ -33,9 +33,9 @@ form.onsubmit = () =>{
     spanDel.classList.add("delete")
 
 
-    spanDel.textContent = " ❌ "
+    spanDel.textContent = " ╳ "
     spanDel.style.fontSize = "8px"
-    spanDel.style.marginLeft = '12px'
+    spanDel.style.color = "red"
     spanDel.style.verticalAlign ="middle"
     spanDel.onclick = () => del(li);
 
