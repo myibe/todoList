@@ -38,9 +38,8 @@ form.onsubmit = () =>{
 
     // style de la croix
 
-    spanDel.textContent = " ✖ "
+    spanDel.textContent = " 🗑 "
     spanDel.style.fontSize = "15px"
-    spanDel.style.color = "red"
     spanDel.style.verticalAlign ="middle"
     spanDel.onclick = () => del(li);
 

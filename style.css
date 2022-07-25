@@ -12,6 +12,7 @@
 
 .delete {
     float: right;
+    cursor:pointer;
 }
 
 #copyright {
