@@ -1,4 +1,7 @@
 "use strict"
+
+// Fonction pour date et heure
+
 var setdate=document.querySelector(".set_date");
 var settime=document.querySelector(".set_time");
 
@@ -11,6 +14,7 @@ setInterval(function(){
     settime.innerHTML=time;
 },500);  
 
+// Récupération de la liste
 
 ol.innerHTML = localStorage.getItem("list")
 
@@ -32,9 +36,10 @@ form.onsubmit = () =>{
     const spanDel = document.createElement("span");
     spanDel.classList.add("delete")
 
+    // style de la croix
 
-    spanDel.textContent = " ╳ "
-    spanDel.style.fontSize = "8px"
+    spanDel.textContent = " ✖ "
+    spanDel.style.fontSize = "15px"
     spanDel.style.color = "red"
     spanDel.style.verticalAlign ="middle"
     spanDel.onclick = () => del(li);
